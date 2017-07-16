@@ -10,6 +10,11 @@ A Docker container for building https://github.com/juliogonzalez/pgsql-http-rpm
 
 - Build pgsql-http-rpm by running the Docker container
 
-    `docker run -it --rm -v /path/to/pgsql-http-rpm:/tmp/pgsql-http-rpm pgsql-http-rpm-build-environment /bin/bash -c "cd /tmp/pgsql-http-rpm; ./pgsql-http-rpm -p 9.6"`
+    `docker run -it --rm -v /path/to/pgsql-http-rpm:/tmp/pgsql-http-rpm pgsql-http-rpm-build-environment`
 
 - Retrieve the built RPM from /path/to/pgsql-http-rpm/SRPMS/
+
+## To clean pgsql-http-rpm artifacts
+
+- `docker run -it --rm -v /path/to/pgsql-http-rpm:/
+tmp/pgsql-http-rpm pgsql-http-rpm-build-environment /bin/bash -c "cd /tmp/pgsql-http-rpm; ./clean"`

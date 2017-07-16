@@ -20,3 +20,5 @@ RUN yum update -y && \
     yum-utils \
     -y && \
   yum clean all
+
+CMD ["/bin/bash", "-c", "cd /tmp/pgsql-http-rpm; ./pgsql-http-rpm -p 9.6"]
